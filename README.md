@@ -4,10 +4,14 @@ BS-D04「Microsoft Azure と AI で加速するデジタル改革」でご紹介
 
 ### Search & Intelligent Bot
 
-- Azure Search
-  - [商品検索Botデモサイト](https://swatchbot201908.azurewebsites.net/index.html)
-  - [ソースコード](WatchFinder/WatchFinderWeb) (HTML/JavaScript)
+- [商品検索 Bot デモサイト](https://swatchbot201908.azurewebsites.net/index.html)
   - <img src="doc_images/watchbot201908.png" width="400px">
+
+- Azure Bot Service
+  - [Chatbot ソースコード](WatchFinder/WatchFinderBot) (C#, Bot Framework 4.5)
+  - [Bot 表示 UI ソースコード](WatchFinder/WatchFinderWeb) (HTML/JavaScript)
+  - <img src="doc_images/watchbot201908.png" width="400px">
+- Azure Search
   - [商品検索デモサイト](https://swatchbot201908.azurewebsites.net/azsearch.html)
   - [ソースコード](WatchFinder/AzureSearchWeb) (HTML/JavaScript)
   - <img src="doc_images/watchsearch201908.png" width="400px">
