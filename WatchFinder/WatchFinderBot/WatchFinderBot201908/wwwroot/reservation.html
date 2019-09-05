@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Swatch Demo</title>
+    <style type="text/css">
+    .row { margin:10px; }
+    </style>
+</head>
+<body onLoad="pageLoad()">
+
+<h1 id="header">ご予約票</h1>
+
+<div class="row">
+    <img id="productImage" src="" />
+    <div id="productName"></div>
+</div>
+<div class="row">
+    ご予約日時
+    <div id="reservedDatetime"></div>
+</div>
+<div class="row">
+    ご連絡先
+    <div id="phoneNumber"></div>
+</div>
+
+<script type="text/javascript">
+function getParam(name,url){
+    if (!url) url = window.location.href;
+    name = name.replace(/[\[\]]/g, "\\$&");
+    var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+        results = regex.exec(url);
+    if (!results) return null;
+    if (!results[2]) return '';
+    return decodeURIComponent(results[2].replace(/\+/g, " "));
+}
+
+function pageLoad(){
+    var url = new URL(location.href);
+    //var productImage = url.searchParams.get("productImage");
+    //var productName = url.searchParams.get("productName");
+    var productImage = getParam('productImage', url);
+    var productName = getParam('productName', url);
+    var phoneNumber = getParam('phoneNumber', url);
+
+    nameObj = document.getElementById("productName");
+    nameObj.innerText = productName;
+
+    imageObj = document.getElementById("productImage");
+    imageObj.src = productImage;
+
+    var datetime = new Date();
+    datetimeObj = document.getElementById("reservedDatetime");
+    datetimeUTC =  datetime.toUTCString();
+    datetimeObj.innerText = datetime.toUTCString();
+
+    phoneNumberObj = document.getElementById("phoneNumber");
+    phoneNumberObj.innerText = phoneNumber;
+}
+
+</script>
+
+</body>
+</html>

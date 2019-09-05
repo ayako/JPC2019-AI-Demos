@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8">
@@ -7,20 +7,17 @@
     <script src="https://kit.fontawesome.com/7a6de1d1ed.js"></script>
 </head>
 <body>
-    <!-- Main Content -->
-    <iframe id="main-window" src="https://azure.microsoft.com/ja-jp/services/cognitive-services/"
-        style="border:0; width:100%; min-height:695px; margin:0; padding:0;"
-        scrolling="yes" frameborder="0">
-    </iframe>
+    <!--<H1>Azure Bot Service DEMO</H1>
+    <H2>using Azure Search and Cognitive Services Language Understanding </H2>-->
 
-    <!-- Chat Bot -->
-    <div id="ChatbotClick"><i class="far fa-comment-dots fa-5x icon-red" ></i></div>
+    <!-- chatbot -->
+    <div id="ChatbotClick"><i class="far fa-comment-dots fa-5x icon-red"></i></div>
     <div id="Chatbot">
         <iframe id="bot-window" src="botwindow.html" style="min-width: 400px; width: 100%; min-height: 500px;"></iframe>
     </div>
     <div class="Chatbot-background"></div>
 
-    <!-- Chat Bot (Code) -->
+    <!-- chatbot code -->
     <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
     <script type="text/javascript">
         $('#ChatbotClick').on('click', function () {

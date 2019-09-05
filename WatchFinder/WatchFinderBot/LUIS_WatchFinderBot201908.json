@@ -1,0 +1,742 @@
+{
+  "luis_schema_version": "3.2.0",
+  "versionId": "0.1",
+  "name": "SwatchBot201908",
+  "desc": "",
+  "culture": "ja-jp",
+  "tokenizerVersion": "1.0.0",
+  "intents": [
+    {
+      "name": "Find"
+    },
+    {
+      "name": "Greeting"
+    },
+    {
+      "name": "Help"
+    },
+    {
+      "name": "None"
+    },
+    {
+      "name": "Reserve"
+    },
+    {
+      "name": "Reset"
+    },
+    {
+      "name": "Select"
+    }
+  ],
+  "entities": [
+    {
+      "name": "ProductName",
+      "roles": []
+    }
+  ],
+  "composites": [],
+  "closedLists": [
+    {
+      "name": "Bands",
+      "subLists": [
+        {
+          "canonicalForm": "Stainless",
+          "list": [
+            "ステンレス",
+            "金属"
+          ]
+        },
+        {
+          "canonicalForm": "Milanese",
+          "list": [
+            "ミラネーゼ",
+            "メッシュ",
+            "金属"
+          ]
+        },
+        {
+          "canonicalForm": "Leather",
+          "list": [
+            "レザー",
+            "革",
+            "合成皮革",
+            "皮"
+          ]
+        },
+        {
+          "canonicalForm": "Silicone",
+          "list": [
+            "シリコン",
+            "プラスチック",
+            "プラスティック"
+          ]
+        }
+      ],
+      "roles": []
+    },
+    {
+      "name": "Colors",
+      "subLists": [
+        {
+          "canonicalForm": "Red",
+          "list": [
+            "レッド",
+            "赤"
+          ]
+        },
+        {
+          "canonicalForm": "Gray",
+          "list": [
+            "グレー",
+            "シルバー"
+          ]
+        },
+        {
+          "canonicalForm": "Yellow",
+          "list": [
+            "イエロー",
+            "黄",
+            "黄色"
+          ]
+        },
+        {
+          "canonicalForm": "Pink",
+          "list": [
+            "ピンク"
+          ]
+        },
+        {
+          "canonicalForm": "White",
+          "list": [
+            "ホワイト",
+            "白",
+            "白く",
+            "白い"
+          ]
+        },
+        {
+          "canonicalForm": "Blue",
+          "list": [
+            "ブルー",
+            "青",
+            "あお"
+          ]
+        },
+        {
+          "canonicalForm": "Black",
+          "list": [
+            "ブラック",
+            "黒",
+            "くろ"
+          ]
+        }
+      ],
+      "roles": []
+    },
+    {
+      "name": "Gender",
+      "subLists": [
+        {
+          "canonicalForm": "Kids",
+          "list": [
+            "子供",
+            "子ども",
+            "こども"
+          ]
+        },
+        {
+          "canonicalForm": "Womens",
+          "list": [
+            "彼女",
+            "女",
+            "奥さん",
+            "嫁",
+            "妹",
+            "姉",
+            "母",
+            "姪",
+            "女性",
+            "カノジョ"
+          ]
+        },
+        {
+          "canonicalForm": "Mens",
+          "list": [
+            "彼",
+            "夫",
+            "ダンナ",
+            "男",
+            "兄",
+            "弟",
+            "父",
+            "甥",
+            "お 父さん",
+            "男性",
+            "彼氏",
+            "カレ"
+          ]
+        }
+      ],
+      "roles": []
+    },
+    {
+      "name": "Impressions",
+      "subLists": [
+        {
+          "canonicalForm": "Classic",
+          "list": [
+            "クラシック",
+            "普通",
+            "定番",
+            "シンプル"
+          ]
+        },
+        {
+          "canonicalForm": "Elegant",
+          "list": [
+            "エレガント",
+            "上品な",
+            "シック"
+          ]
+        },
+        {
+          "canonicalForm": "Stylish",
+          "list": [
+            "かっこいい",
+            "カッコいい",
+            "スタイリッシュ",
+            "きりっとした",
+            "カッコイイ"
+          ]
+        },
+        {
+          "canonicalForm": "Sparkle",
+          "list": [
+            "キラキラ",
+            "ピカピカ",
+            "きらきら",
+            "ぴかぴか"
+          ]
+        },
+        {
+          "canonicalForm": "Pretty",
+          "list": [
+            "かわいい",
+            "可愛い",
+            "キュート"
+          ]
+        }
+      ],
+      "roles": []
+    },
+    {
+      "name": "Scenes",
+      "subLists": [
+        {
+          "canonicalForm": "Casual",
+          "list": [
+            "カジュアル",
+            "オフの時",
+            "プライベート",
+            "週末"
+          ]
+        },
+        {
+          "canonicalForm": "Business",
+          "list": [
+            "仕事",
+            "ビジネス"
+          ]
+        }
+      ],
+      "roles": []
+    }
+  ],
+  "patternAnyEntities": [],
+  "regex_entities": [
+    {
+      "name": "PhoneNo",
+      "regexPattern": "[0-9]{11}",
+      "roles": []
+    }
+  ],
+  "prebuiltEntities": [],
+  "model_features": [],
+  "regex_features": [],
+  "patterns": [
+    {
+      "pattern": "{ProductName} を予約",
+      "intent": "Select"
+    }
+  ],
+  "utterances": [
+    {
+      "text": "03048273628",
+      "intent": "Reserve",
+      "entities": []
+    },
+    {
+      "text": "04028172636",
+      "intent": "Reserve",
+      "entities": []
+    },
+    {
+      "text": "05028371928",
+      "intent": "Reserve",
+      "entities": []
+    },
+    {
+      "text": "05029182736",
+      "intent": "Reserve",
+      "entities": []
+    },
+    {
+      "text": "07027361927",
+      "intent": "Reserve",
+      "entities": []
+    },
+    {
+      "text": "08024837162です",
+      "intent": "Reserve",
+      "entities": []
+    },
+    {
+      "text": "08098765432",
+      "intent": "Reserve",
+      "entities": []
+    },
+    {
+      "text": "09012345678",
+      "intent": "Reserve",
+      "entities": []
+    },
+    {
+      "text": "09034258271",
+      "intent": "Reserve",
+      "entities": []
+    },
+    {
+      "text": "09034258271です",
+      "intent": "Reserve",
+      "entities": []
+    },
+    {
+      "text": "09038271627",
+      "intent": "Reserve",
+      "entities": []
+    },
+    {
+      "text": "09048273819",
+      "intent": "Reserve",
+      "entities": []
+    },
+    {
+      "text": "glass of bubblesを予約",
+      "intent": "Select",
+      "entities": [
+        {
+          "entity": "ProductName",
+          "startPos": 0,
+          "endPos": 15
+        }
+      ]
+    },
+    {
+      "text": "help",
+      "intent": "Help",
+      "entities": []
+    },
+    {
+      "text": "pastelbaya を予約",
+      "intent": "Select",
+      "entities": [
+        {
+          "entity": "ProductName",
+          "startPos": 0,
+          "endPos": 9
+        }
+      ]
+    },
+    {
+      "text": "sistem insideを予約",
+      "intent": "Select",
+      "entities": [
+        {
+          "entity": "ProductName",
+          "startPos": 0,
+          "endPos": 12
+        }
+      ]
+    },
+    {
+      "text": "skinazulを予約",
+      "intent": "Select",
+      "entities": [
+        {
+          "entity": "ProductName",
+          "startPos": 0,
+          "endPos": 7
+        }
+      ]
+    },
+    {
+      "text": "skincounter を予約",
+      "intent": "Select",
+      "entities": [
+        {
+          "entity": "ProductName",
+          "startPos": 0,
+          "endPos": 10
+        }
+      ]
+    },
+    {
+      "text": "skinelliを予約",
+      "intent": "Select",
+      "entities": [
+        {
+          "entity": "ProductName",
+          "startPos": 0,
+          "endPos": 7
+        }
+      ]
+    },
+    {
+      "text": "taupinouを予約",
+      "intent": "Select",
+      "entities": [
+        {
+          "entity": "ProductName",
+          "startPos": 0,
+          "endPos": 7
+        }
+      ]
+    },
+    {
+      "text": "あの",
+      "intent": "Greeting",
+      "entities": []
+    },
+    {
+      "text": "イメージと違う",
+      "intent": "Reset",
+      "entities": []
+    },
+    {
+      "text": "カッコイイのがいいです",
+      "intent": "Find",
+      "entities": []
+    },
+    {
+      "text": "キラキラしているものが好みです",
+      "intent": "Find",
+      "entities": []
+    },
+    {
+      "text": "これいただきます",
+      "intent": "Select",
+      "entities": []
+    },
+    {
+      "text": "これがいいです",
+      "intent": "Select",
+      "entities": []
+    },
+    {
+      "text": "これにします",
+      "intent": "Select",
+      "entities": []
+    },
+    {
+      "text": "こんにちは",
+      "intent": "Greeting",
+      "entities": []
+    },
+    {
+      "text": "シリコン",
+      "intent": "Find",
+      "entities": []
+    },
+    {
+      "text": "シリコンベルトが良いかな",
+      "intent": "Find",
+      "entities": []
+    },
+    {
+      "text": "シルバーとかいいかなと思ってます",
+      "intent": "Find",
+      "entities": []
+    },
+    {
+      "text": "ダンナ",
+      "intent": "Find",
+      "entities": []
+    },
+    {
+      "text": "ちょっと違うな",
+      "intent": "Reset",
+      "entities": []
+    },
+    {
+      "text": "ハロー",
+      "intent": "Greeting",
+      "entities": []
+    },
+    {
+      "text": "はろー",
+      "intent": "Greeting",
+      "entities": []
+    },
+    {
+      "text": "ピンク",
+      "intent": "Find",
+      "entities": []
+    },
+    {
+      "text": "ピンクとかかわいいヤツがいいです",
+      "intent": "Find",
+      "entities": []
+    },
+    {
+      "text": "ブルー",
+      "intent": "Find",
+      "entities": []
+    },
+    {
+      "text": "ベルトは皮がいいかなと思ってます",
+      "intent": "Find",
+      "entities": []
+    },
+    {
+      "text": "ヘルプ",
+      "intent": "Help",
+      "entities": []
+    },
+    {
+      "text": "へるぷ",
+      "intent": "Help",
+      "entities": []
+    },
+    {
+      "text": "メッシュ",
+      "intent": "Find",
+      "entities": []
+    },
+    {
+      "text": "もう一度検索",
+      "intent": "Reset",
+      "entities": []
+    },
+    {
+      "text": "もしもし",
+      "intent": "Greeting",
+      "entities": []
+    },
+    {
+      "text": "やり直し",
+      "intent": "Reset",
+      "entities": []
+    },
+    {
+      "text": "リセット",
+      "intent": "Reset",
+      "entities": []
+    },
+    {
+      "text": "わからない",
+      "intent": "Help",
+      "entities": []
+    },
+    {
+      "text": "上品なモデルがあるといいなと",
+      "intent": "Find",
+      "entities": []
+    },
+    {
+      "text": "仕事でつかえるカッコイイ感じの時計を探しています",
+      "intent": "Find",
+      "entities": []
+    },
+    {
+      "text": "他のものを探したい",
+      "intent": "Reset",
+      "entities": []
+    },
+    {
+      "text": "他の時計を見てみたいです",
+      "intent": "Reset",
+      "entities": []
+    },
+    {
+      "text": "他を検索",
+      "intent": "Reset",
+      "entities": []
+    },
+    {
+      "text": "何ができる",
+      "intent": "Help",
+      "entities": []
+    },
+    {
+      "text": "元気な色、イエローとか",
+      "intent": "Find",
+      "entities": []
+    },
+    {
+      "text": "分からない",
+      "intent": "Help",
+      "entities": []
+    },
+    {
+      "text": "別のものを見たい",
+      "intent": "Reset",
+      "entities": []
+    },
+    {
+      "text": "可愛い感じの時計を探しています",
+      "intent": "Find",
+      "entities": []
+    },
+    {
+      "text": "女性",
+      "intent": "Find",
+      "entities": []
+    },
+    {
+      "text": "女性向けの時計がいいかな",
+      "intent": "Find",
+      "entities": []
+    },
+    {
+      "text": "妹",
+      "intent": "Find",
+      "entities": []
+    },
+    {
+      "text": "妹の入学お祝いに買ってあげたいんです",
+      "intent": "Find",
+      "entities": []
+    },
+    {
+      "text": "定番だと黒かな",
+      "intent": "Find",
+      "entities": []
+    },
+    {
+      "text": "定番の形ってありますか",
+      "intent": "Find",
+      "entities": []
+    },
+    {
+      "text": "彼女へのプレゼント探しているんですが、仕事でもつかえる定番モデルでおすすめありますか",
+      "intent": "Find",
+      "entities": []
+    },
+    {
+      "text": "彼氏がかっこいい時計が欲しいって言ってるんですが",
+      "intent": "Find",
+      "entities": []
+    },
+    {
+      "text": "彼氏にプレゼントしたいんですが",
+      "intent": "Find",
+      "entities": []
+    },
+    {
+      "text": "思ってるのとちがう",
+      "intent": "Reset",
+      "entities": []
+    },
+    {
+      "text": "探しているのはお父さん用なんですけど、週末用かな",
+      "intent": "Find",
+      "entities": []
+    },
+    {
+      "text": "携帯は08028726363です",
+      "intent": "Reserve",
+      "entities": []
+    },
+    {
+      "text": "携帯番号は08028371928です",
+      "intent": "Reserve",
+      "entities": []
+    },
+    {
+      "text": "操作方法",
+      "intent": "Help",
+      "entities": []
+    },
+    {
+      "text": "男性物を探してて",
+      "intent": "Find",
+      "entities": []
+    },
+    {
+      "text": "男性用",
+      "intent": "Find",
+      "entities": []
+    },
+    {
+      "text": "白いバンド",
+      "intent": "Find",
+      "entities": []
+    },
+    {
+      "text": "白くてメッシュベルトの時計ってありますか",
+      "intent": "Find",
+      "entities": []
+    },
+    {
+      "text": "白とかピンクとか",
+      "intent": "Find",
+      "entities": []
+    },
+    {
+      "text": "白の女性用の時計ってありますか",
+      "intent": "Find",
+      "entities": []
+    },
+    {
+      "text": "皮",
+      "intent": "Find",
+      "entities": []
+    },
+    {
+      "text": "相談に乗って",
+      "intent": "Greeting",
+      "entities": []
+    },
+    {
+      "text": "買います",
+      "intent": "Select",
+      "entities": []
+    },
+    {
+      "text": "赤とかはっきりしている色がいいです",
+      "intent": "Find",
+      "entities": []
+    },
+    {
+      "text": "青",
+      "intent": "Find",
+      "entities": []
+    },
+    {
+      "text": "黄色",
+      "intent": "Find",
+      "entities": []
+    },
+    {
+      "text": "黒",
+      "intent": "Find",
+      "entities": []
+    },
+    {
+      "text": "黒とか青とか",
+      "intent": "Find",
+      "entities": []
+    }
+  ],
+  "settings": []
+}
