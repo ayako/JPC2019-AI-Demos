@@ -36,7 +36,7 @@ namespace TextToSpeechApp_201908
 
             // Please replace | add language code and voices
             // Refer: https://docs.microsoft.com/en-us/azure/cognitive-services/speech-service/language-support#text-to-speech
-            languageList.Add(new SynthesisLanguage() { LanguageCode = "ja-JP", StandardVoice = "ja-JP-HarukaRUS", NeuralVoice = "NEURAL_LANG_NAME" });
+            languageList.Add(new SynthesisLanguage() { LanguageCode = "ja-JP", StandardVoice = "ja-JP-HarukaRUS", NeuralVoice = "ja-JP-NanamiNeural" });
             foreach (var item in languageList)
             {
                 LanguageSelectBox.Items.Add(item.LanguageCode);
